@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, shrink-to-fit=no">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Send Email</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    </head>
+    <body>
+        <section id="contact" class="header pb-5">
+            <div class="container py-5">
+                <div class="card">
+                    <div class="card-body">
+                        <h1 class="font-weight-light text-center py-3">Contact Us</h1>
+                        {{msg}}
+                        <div class="row pt-3">
+                            <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                                <div class="row">
+                                    <div class="col-lg-1 offset-1 col-md-2 col-sm-2 col-2">
+                                        <span><i class="fa fa-map-marker fa-2x" aria-hidden="true"></i></span>
+                                    </div>
+                                    <div class="col-lg-10 col-md-9 col-sm-9 col-9">
+                                        <h3 class="font-weight-light">Find me</h3>
+                                        <p>VIT, Chennai</p>
+                                    </div>
+                                </div>
+                                <div class="row pt-3">
+                                    <div class="col-lg-1 offset-1 col-md-2 col-sm-2 col-2">
+                                        <span><i class="fa fa-phone fa-2x" aria-hidden="true"></i></span>
+                                    </div>
+                                
+                                    <div class="col-lg-10 col-md-9 col-sm-9 col-9">
+                                        <h3 class="font-weight-light">Give us a ring</h3>
+                                        <p>
+                                        Aakash Ratha<br>+91-9004745982
+                                        </p>
+                                    </div>
+    
+                                    <div class="col-lg-1 offset-1 col-md-2 col-sm-2 col-2">
+                                        <span><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></span>
+                                    </div>
+    
+                                    <div class="col-lg-10 col-md-9 col-sm-9 col-9">
+                                        <h3 class="font-weight-light">Email Us</h3>
+                                        <p>
+                                            aakash.ratha2000@gmail.com
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                                <form method="POST" action="/send">
+                                    <div class="form-row">
+                                        <div class="form-group col-lg-6 col-md-12 col-sm-12 col-12">
+                                            <label>First Name</label>
+                                            <input type="text" name="first_name" class="form-control" placeholder="First Name">
+                                        </div>
+                                        <div class="form-group col-lg-6 col-md-12 col-sm-12 col-12">
+                                            <label>Last Name</label>
+                                            <input type="text" name="last_name" class="form-control" placeholder="Last Name">
+                                        </div>
+                                    </div>
+                                    <label>Email</label>
+                                    <input type="Email" name="email" name="message" class="form-control" placeholder="Email">
+                                    <label>Your Message</label>
+                                    <textarea class="form-control mb-3" placeholder="Message" id="" cols="20" rows="5"></textarea>
+                                    <input type="checkbox"><label>I am not a robot</label>
+                                    <input type="submit" class="btn btn-primary float-right">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>

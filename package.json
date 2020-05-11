@@ -1,0 +1,20 @@
+{
+  "name": "app.js",
+  "version": "1.0.0",
+  "description": "Template",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "aakash ratha",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.2",
+    "express": "^4.17.1",
+    "express-handlebars": "^4.0.4",
+    "handlebars": "^4.7.6",
+    "nodemailer": "^6.4.6",
+    "nodemailer-mailgun-transport": "^2.0.0"
+  }
+}
