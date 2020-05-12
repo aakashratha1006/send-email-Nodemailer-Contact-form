@@ -1,2 +1,2 @@
 # Send-Email-Nodemailer-Contact-form
-Simple Node JS/ Express using Nodemailer to send mails.
+Simple Node JS/ Express app using Nodemailer to send mails.
